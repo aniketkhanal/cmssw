@@ -13,6 +13,7 @@ from RecoBTag.ONNXRuntime.pfDeepBoostedJet_cff import *
 from RecoBTag.ONNXRuntime.pfHiggsInteractionNet_cff import *
 from RecoBTag.ONNXRuntime.pfParticleNet_cff import *
 from RecoBTag.ONNXRuntime.pfParticleNetAK4_cff import *
+from RecoBTag.ONNXRuntime.pfParticleNetFromMiniAODAK4_cff import *
 from RecoBTag.ONNXRuntime.pfParticleTransformerAK4_cff import *
 from RecoBTag.ONNXRuntime.pfUnifiedParticleTransformerAK4_cff import *
 from RecoVertex.AdaptiveVertexFinder.inclusiveVertexing_cff import *
@@ -114,7 +115,9 @@ _pfBTaggingTask_run3 = cms.Task(
     pixelClusterTagInfos,
 
     pfParticleNetAK4TaskForRECO,
-    pfParticleNetTask
+    pfParticleNetTask,
+    pfParticleNetFromMiniAODAK4PuppiCentralJetTags,
+    pfParticleNetFromMiniAODAK4PuppiCentralTagInfos
 )
 _pfCTaggingTask_run3 = cms.Task(
     inclusiveCandidateVertexingCvsLTask,
