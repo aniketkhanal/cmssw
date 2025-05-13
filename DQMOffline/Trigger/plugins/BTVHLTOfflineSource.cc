@@ -30,7 +30,7 @@
 #include "DataFormats/HLTReco/interface/TriggerTypeDefs.h"
 #include "DataFormats/VertexReco/interface/Vertex.h"
 #include "DataFormats/BTauReco/interface/JetTag.h"
-#include "DataFormats/BTauReco/interface/ShallowTagInfo.h"
+#include "DataFormats/BTauReco/interface/DeepBoostedJetTagInfo.h"
 #include "HLTrigger/HLTcore/interface/HLTConfigProvider.h"
 #include "FWCore/Framework/interface/MakerMacros.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
@@ -99,7 +99,7 @@ private:
   edm::EDGetTokenT<trigger::TriggerEvent> triggerSummaryToken;
   edm::EDGetTokenT<trigger::TriggerEvent> triggerSummaryFUToken;
 
-  edm::EDGetTokenT<std::vector<reco::ShallowTagInfo>> shallowTagInfosTokenPf_;
+  edm::EDGetTokenT<std::vector<reco::DeepBoostedJetTagInfo>> DeepBoostedJetTagInfosTokenPf_;
 
   edm::EDGetTokenT<std::vector<SVTagInfo>> SVTagInfosTokenPf_;
 
@@ -265,8 +265,8 @@ BTVHLTOfflineSource::BTVHLTOfflineSource(const edm::ParameterSet& iConfig)
       triggerSummaryToken(consumes<trigger::TriggerEvent>(triggerSummaryLabel_)),
       triggerSummaryFUToken(consumes<trigger::TriggerEvent>(
           edm::InputTag(triggerSummaryLabel_.label(), triggerSummaryLabel_.instance(), std::string("FU")))),
-      shallowTagInfosTokenPf_(
-          consumes<vector<reco::ShallowTagInfo>>(edm::InputTag("hltDeepCombinedSecondaryVertexBJetTagsInfos"))),
+      DeepBoostedJetTagInfosTokenPf_(
+          consumes<vector<reco::DeepBoostedJetTagInfo>>(edm::InputTag("hltParticleNetJetTagInfos"))),
       SVTagInfosTokenPf_(consumes<std::vector<SVTagInfo>>(edm::InputTag("hltDeepSecondaryVertexTagInfosPF"))),
       pfTagsToken_(consumes<reco::JetTagCollection>(iConfig.getParameter<edm::InputTag>("onlineDiscrLabelPF"))),
       minDecayLength_(iConfig.getParameter<double>("minDecayLength")),
@@ -521,8 +521,8 @@ void BTVHLTOfflineSource::analyze(const edm::Event& iEvent, const edm::EventSetu
     // additional plots from tag info collections
     /////////////////////////////////////////////
 
-    edm::Handle<std::vector<reco::ShallowTagInfo>> shallowTagInfosPf;
-    iEvent.getByToken(shallowTagInfosTokenPf_, shallowTagInfosPf);
+    edm::Handle<std::vector<reco::DeepBoostedJetTagInfo>> DeepBoostedJetTagInfosPf;
+    iEvent.getByToken(DeepBoostedJetTagInfosTokenPf_, DeepBoostedJetTagInfosPf);
 
     //    edm::Handle<std::vector<reco::TemplatedSecondaryVertexTagInfo<reco::IPTagInfo<edm::RefVector<std::vector<reco::Track>, reco::Track, edm::refhelper::FindUsingAdvance<std::vector<reco::Track>, reco::Track> >, reco::JTATagInfo>, reco::Vertex> > > caloTagInfos;
     //    iEvent.getByToken(caloTagInfosToken_, caloTagInfos);
@@ -530,11 +530,11 @@ void BTVHLTOfflineSource::analyze(const edm::Event& iEvent, const edm::EventSetu
     //    edm::Handle<std::vector<reco::TemplatedSecondaryVertexTagInfo<reco::IPTagInfo<edm::RefVector<std::vector<reco::Track>, reco::Track, edm::refhelper::FindUsingAdvance<std::vector<reco::Track>, reco::Track> >, reco::JTATagInfo>, reco::Vertex> > > pfTagInfos;
     //    iEvent.getByToken(pfTagInfosToken_, pfTagInfos);
 
-    // first try to get info from shallowTagInfos ...
-    if (v.getTriggerType() == "PF" && shallowTagInfosPf.isValid()) {
-      const auto& shallowTagInfoCollection = shallowTagInfosPf;
-      for (const auto& shallowTagInfo : *shallowTagInfoCollection) {
-        const auto& tagVars = shallowTagInfo.taggingVariables();
+    // first try to get info from DeepBoostedJetTagInfos ...
+    if (v.getTriggerType() == "PF" && DeepBoostedJetTagInfosPf.isValid()) {
+      const auto& DeepBoostedTagInfoCollection = DeepBoostedJetTagInfosPf;
+      for (const auto& DeepBoostedTagInfo : *DeepBoostedTagInfoCollection) {
+        const auto& tagVars = DeepBoostedTagInfo.taggingVariables();
 
         // n secondary vertices and n selected tracks
         for (const auto& tagVar : tagVars.getList(reco::btau::jetNSecondaryVertices, false)) {
