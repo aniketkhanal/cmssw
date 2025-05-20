@@ -178,35 +178,79 @@ private:
     MonitorElement* h_3d_ip_error = nullptr;
     MonitorElement* h_3d_ip_sig = nullptr;
 
-    //NEW
-    MonitorElement* h_jetNSecondaryVertices = nullptr;
-    MonitorElement* h_jet_pt = nullptr;
-    MonitorElement* h_jet_eta = nullptr;
-    MonitorElement* h_trackSumJetEtRatio = nullptr;
-    MonitorElement* h_trackSip2dValAboveCharm = nullptr;
-    MonitorElement* h_trackSip2dSigAboveCharm = nullptr;
-    MonitorElement* h_trackSip3dValAboveCharm = nullptr;
-    MonitorElement* h_trackSip3dSigAboveCharm = nullptr;
-    MonitorElement* h_jetNSelectedTracks = nullptr;
-    MonitorElement* h_jetNTracksEtaRel = nullptr;
-    MonitorElement* h_vertexCategory = nullptr;
-    MonitorElement* h_trackSumJetDeltaR = nullptr;
+    MonitorElement* h_pfcand_puppiw = nullptr;
+    MonitorElement* h_pfcand_hcalFrac = nullptr;
+    MonitorElement* h_pfcand_VTX_ass = nullptr;
+    MonitorElement* h_pfcand_lostInnerHits = nullptr;
+    MonitorElement* h_pfcand_quality = nullptr;
+    MonitorElement* h_pfcand_charge = nullptr;
+    MonitorElement* h_pfcand_isEl = nullptr;
+    MonitorElement* h_pfcand_isMu = nullptr;
+    MonitorElement* h_pfcand_isChargedHad = nullptr;
+    MonitorElement* h_pfcand_isGamma = nullptr;
+    MonitorElement* h_pfcand_isNeutralHad = nullptr;
+    MonitorElement* h_pfcand_phirel = nullptr;
+    MonitorElement* h_pfcand_etarel = nullptr;
+    MonitorElement* h_pfcand_deltaR = nullptr;
+    MonitorElement* h_pfcand_abseta = nullptr;
+    MonitorElement* h_pfcand_ptrel_log = nullptr;
+    MonitorElement* h_pfcand_erel_log = nullptr;
+    MonitorElement* h_pfcand_pt_log = nullptr;
+    MonitorElement* h_pfcand_drminsv = nullptr;
+    MonitorElement* h_pfcand_drsubjet1 = nullptr;
+    MonitorElement* h_pfcand_drsubjet2 = nullptr;
+    MonitorElement* h_pfcand_normchi2 = nullptr;
+    MonitorElement* h_pfcand_dz = nullptr;
+    MonitorElement* h_pfcand_dzsig = nullptr;
+    MonitorElement* h_pfcand_dxy = nullptr;
+    MonitorElement* h_pfcand_dxysig = nullptr;
+    MonitorElement* h_pfcand_dptdpt = nullptr;
+    MonitorElement* h_pfcand_detadeta = nullptr;
+    MonitorElement* h_pfcand_dphidphi = nullptr;
+    MonitorElement* h_pfcand_dxydxy = nullptr;
+    MonitorElement* h_pfcand_dzdz = nullptr;
+    MonitorElement* h_pfcand_dxydz = nullptr;
+    MonitorElement* h_pfcand_dphidxy = nullptr;
+    MonitorElement* h_pfcand_dlambdadz = nullptr;
+    MonitorElement* h_pfcand_btagEtaRel = nullptr;
+    MonitorElement* h_pfcand_btagPtRatio = nullptr;
+    MonitorElement* h_pfcand_btagPParRatio = nullptr;
+    MonitorElement* h_pfcand_btagSip2dVal = nullptr;
+    MonitorElement* h_pfcand_btagSip2dSig = nullptr;
+    MonitorElement* h_pfcand_btagSip3dVal = nullptr;
+    MonitorElement* h_pfcand_btagSip3dSig = nullptr;
+    MonitorElement* h_pfcand_btagJetDistVal = nullptr;
+    MonitorElement* h_pfcand_mask = nullptr;
+    MonitorElement* h_pfcand_pt_log_nopuppi = nullptr;
+    MonitorElement* h_pfcand_e_log_nopuppi = nullptr;
+    MonitorElement* h_pfcand_ptrel = nullptr;
+    MonitorElement* h_pfcand_erel = nullptr;
 
-    MonitorElement* h_trackJetDistVal = nullptr;
-    MonitorElement* h_trackPtRel = nullptr;
-    MonitorElement* h_trackDeltaR = nullptr;
-    MonitorElement* h_trackPtRatio = nullptr;
-    MonitorElement* h_trackSip3dSig = nullptr;
-    MonitorElement* h_trackSip2dSig = nullptr;
-    MonitorElement* h_trackDecayLenVal = nullptr;
-    MonitorElement* h_trackEtaRel = nullptr;
-
-    MonitorElement* h_vertexEnergyRatio = nullptr;
-    MonitorElement* h_vertexJetDeltaR = nullptr;
-    MonitorElement* h_flightDistance2dVal = nullptr;
-    MonitorElement* h_flightDistance2dSig = nullptr;
-    MonitorElement* h_flightDistance3dVal = nullptr;
-    MonitorElement* h_flightDistance3dSig = nullptr;
+    MonitorElement* h_jet_pfcand_pt_log = nullptr;
+    MonitorElement* h_jet_pfcand_energy_log = nullptr;
+    MonitorElement* h_jet_pfcand_deta = nullptr;
+    MonitorElement* h_jet_pfcand_dphi = nullptr;
+    MonitorElement* h_jet_pfcand_eta = nullptr;
+    MonitorElement* h_jet_pfcand_charge = nullptr;
+    MonitorElement* h_jet_pfcand_frompv = nullptr;
+    MonitorElement* h_jet_pfcand_nlostinnerhits = nullptr;
+    MonitorElement* h_jet_pfcand_track_chi2 = nullptr;
+    MonitorElement* h_jet_pfcand_track_qual = nullptr;
+    MonitorElement* h_jet_pfcand_dz = nullptr;
+    MonitorElement* h_jet_pfcand_dzsig = nullptr;
+    MonitorElement* h_jet_pfcand_dxy = nullptr;
+    MonitorElement* h_jet_pfcand_dxysig = nullptr;
+    MonitorElement* h_jet_pfcand_etarel = nullptr;
+    MonitorElement* h_jet_pfcand_pperp_ratio = nullptr;
+    MonitorElement* h_jet_pfcand_ppara_ratio = nullptr;
+    MonitorElement* h_jet_pfcand_trackjet_d3d = nullptr;
+    MonitorElement* h_jet_pfcand_trackjet_d3dsig = nullptr;
+    MonitorElement* h_jet_pfcand_trackjet_dist = nullptr;
+    MonitorElement* h_jet_pfcand_nhits = nullptr;
+    MonitorElement* h_jet_pfcand_npixhits = nullptr;
+    MonitorElement* h_jet_pfcand_nstriphits = nullptr;
+    MonitorElement* h_jet_pfcand_trackjet_decayL = nullptr;
+    MonitorElement* h_jet_pfcand_puppiw = nullptr;
 
     ObjME OnlineTrkEff_Pt;
     ObjME OnlineTrkEff_Eta;
@@ -534,142 +578,369 @@ void BTVHLTOfflineSource::analyze(const edm::Event& iEvent, const edm::EventSetu
     if (v.getTriggerType() == "PF" && DeepBoostedJetTagInfosPf.isValid()) {
       const auto& DeepBoostedTagInfoCollection = DeepBoostedJetTagInfosPf;
       for (const auto& DeepBoostedTagInfo : *DeepBoostedTagInfoCollection) {
-        const auto& tagVars = DeepBoostedTagInfo.taggingVariables();
-
-        // n secondary vertices and n selected tracks
-        for (const auto& tagVar : tagVars.getList(reco::btau::jetNSecondaryVertices, false)) {
-          v.h_jetNSecondaryVertices->Fill(tagVar);
-          v.n_vtx->Fill(tagVar);
+        const auto& features = DeepBoostedTagInfo.features();
+        
+        // Regular particle features
+        const auto& pfcand_puppiw_values = features.get("pfcand_puppiw");
+        for (const auto& val : pfcand_puppiw_values) {
+          v.h_pfcand_puppiw->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::jetNSelectedTracks, false)) {
-          v.n_sel_tracks->Fill(tagVar);
-          v.h_jetNSelectedTracks->Fill(tagVar);
+        
+        const auto& pfcand_hcalFrac_values = features.get("pfcand_hcalFrac");
+        for (const auto& val : pfcand_hcalFrac_values) {
+          v.h_pfcand_hcalFrac->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::jetPt, false)) {
-          v.h_jet_pt->Fill(tagVar);
+        
+        const auto& pfcand_VTX_ass_values = features.get("pfcand_VTX_ass");
+        for (const auto& val : pfcand_VTX_ass_values) {
+          v.h_pfcand_VTX_ass->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::jetEta, false)) {
-          v.h_jet_eta->Fill(tagVar);
+        
+        const auto& pfcand_lostInnerHits_values = features.get("pfcand_lostInnerHits");
+        for (const auto& val : pfcand_lostInnerHits_values) {
+          v.h_pfcand_lostInnerHits->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::trackSumJetEtRatio, false)) {
-          v.h_trackSumJetEtRatio->Fill(tagVar);
+        
+        const auto& pfcand_quality_values = features.get("pfcand_quality");
+        for (const auto& val : pfcand_quality_values) {
+          v.h_pfcand_quality->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::trackSumJetDeltaR, false)) {
-          v.h_trackSumJetDeltaR->Fill(tagVar);
+        
+        const auto& pfcand_charge_values = features.get("pfcand_charge");
+        for (const auto& val : pfcand_charge_values) {
+          v.h_pfcand_charge->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::vertexCategory, false)) {
-          v.h_vertexCategory->Fill(tagVar);
+        
+        const auto& pfcand_isEl_values = features.get("pfcand_isEl");
+        for (const auto& val : pfcand_isEl_values) {
+          v.h_pfcand_isEl->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::trackSip2dValAboveCharm, false)) {
-          v.h_trackSip2dValAboveCharm->Fill(tagVar);
+        
+        const auto& pfcand_isMu_values = features.get("pfcand_isMu");
+        for (const auto& val : pfcand_isMu_values) {
+          v.h_pfcand_isMu->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::trackSip2dSigAboveCharm, false)) {
-          v.h_trackSip2dSigAboveCharm->Fill(tagVar);
+        
+        const auto& pfcand_isChargedHad_values = features.get("pfcand_isChargedHad");
+        for (const auto& val : pfcand_isChargedHad_values) {
+          v.h_pfcand_isChargedHad->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::trackSip3dValAboveCharm, false)) {
-          v.h_trackSip3dValAboveCharm->Fill(tagVar);
+        
+        const auto& pfcand_isGamma_values = features.get("pfcand_isGamma");
+        for (const auto& val : pfcand_isGamma_values) {
+          v.h_pfcand_isGamma->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::trackSip3dSigAboveCharm, false)) {
-          v.h_trackSip3dSigAboveCharm->Fill(tagVar);
+        
+        const auto& pfcand_isNeutralHad_values = features.get("pfcand_isNeutralHad");
+        for (const auto& val : pfcand_isNeutralHad_values) {
+          v.h_pfcand_isNeutralHad->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::jetNTracksEtaRel, false)) {
-          v.h_jetNTracksEtaRel->Fill(tagVar);
+        
+        const auto& pfcand_phirel_values = features.get("pfcand_phirel");
+        for (const auto& val : pfcand_phirel_values) {
+          v.h_pfcand_phirel->Fill(val);
         }
-
-        // impact parameter
-        // and new info
-        const auto& trackSip3dVal = tagVars.getList(reco::btau::trackSip3dVal, false);
-        const auto& trackSip3dSig = tagVars.getList(reco::btau::trackSip3dSig, false);
-        const auto& trackJetDistVal = tagVars.getList(reco::btau::trackJetDistVal, false);
-        const auto& trackPtRel = tagVars.getList(reco::btau::trackPtRel, false);
-        const auto& trackSip2dSig = tagVars.getList(reco::btau::trackSip2dSig, false);
-        const auto& trackDeltaR = tagVars.getList(reco::btau::trackDeltaR, false);
-        const auto& trackPtRatio = tagVars.getList(reco::btau::trackPtRatio, false);
-        const auto& trackDecayLenVal = tagVars.getList(reco::btau::trackDecayLenVal, false);
-        const auto& trackEtaRel = tagVars.getList(reco::btau::trackEtaRel, false);
-
-        for (unsigned i_trk = 0; i_trk < trackEtaRel.size(); i_trk++) {
-          v.h_trackEtaRel->Fill(trackEtaRel[i_trk]);
+        
+        const auto& pfcand_etarel_values = features.get("pfcand_etarel");
+        for (const auto& val : pfcand_etarel_values) {
+          v.h_pfcand_etarel->Fill(val);
         }
-
-        for (unsigned i_trk = 0; i_trk < trackJetDistVal.size(); i_trk++) {
-          v.h_trackJetDistVal->Fill(trackJetDistVal[i_trk]);
+        
+        const auto& pfcand_deltaR_values = features.get("pfcand_deltaR");
+        for (const auto& val : pfcand_deltaR_values) {
+          v.h_pfcand_deltaR->Fill(val);
         }
-
-        for (unsigned i_trk = 0; i_trk < trackPtRel.size(); i_trk++) {
-          v.h_trackPtRel->Fill(trackPtRel[i_trk]);
+        
+        const auto& pfcand_abseta_values = features.get("pfcand_abseta");
+        for (const auto& val : pfcand_abseta_values) {
+          v.h_pfcand_abseta->Fill(val);
         }
-
-        for (unsigned i_trk = 0; i_trk < trackDeltaR.size(); i_trk++) {
-          v.h_trackDeltaR->Fill(trackDeltaR[i_trk]);
+        
+        const auto& pfcand_ptrel_log_values = features.get("pfcand_ptrel_log");
+        for (const auto& val : pfcand_ptrel_log_values) {
+          v.h_pfcand_ptrel_log->Fill(val);
         }
-
-        for (unsigned i_trk = 0; i_trk < trackPtRatio.size(); i_trk++) {
-          v.h_trackPtRatio->Fill(trackPtRatio[i_trk]);
+        
+        const auto& pfcand_erel_log_values = features.get("pfcand_erel_log");
+        for (const auto& val : pfcand_erel_log_values) {
+          v.h_pfcand_erel_log->Fill(val);
         }
-
-        for (unsigned i_trk = 0; i_trk < trackDecayLenVal.size(); i_trk++) {
-          v.h_trackDecayLenVal->Fill(trackDecayLenVal[i_trk]);
+        
+        const auto& pfcand_pt_log_values = features.get("pfcand_pt_log");
+        for (const auto& val : pfcand_pt_log_values) {
+          v.h_pfcand_pt_log->Fill(val);
         }
-
-        for (unsigned i_trk = 0; i_trk < trackSip3dVal.size(); i_trk++) {
-          float val = trackSip3dVal[i_trk];
-          float sig = trackSip3dSig[i_trk];
-          v.h_3d_ip_distance->Fill(val);
-          v.h_3d_ip_error->Fill(val / sig);
-          v.h_3d_ip_sig->Fill(sig);
-
-          v.h_trackSip2dSig->Fill(trackSip2dSig[i_trk]);
+        
+        const auto& pfcand_drminsv_values = features.get("pfcand_drminsv");
+        for (const auto& val : pfcand_drminsv_values) {
+          v.h_pfcand_drminsv->Fill(val);
         }
-
-        // vertex mass and tracks per vertex
-        for (const auto& tagVar : tagVars.getList(reco::btau::vertexMass, false)) {
-          v.vtx_mass->Fill(tagVar);
+        
+        const auto& pfcand_drsubjet1_values = features.get("pfcand_drsubjet1");
+        for (const auto& val : pfcand_drsubjet1_values) {
+          v.h_pfcand_drsubjet1->Fill(val);
         }
-        for (const auto& tagVar : tagVars.getList(reco::btau::vertexNTracks, false)) {
-          v.n_vtx_trks->Fill(tagVar);
+        
+        const auto& pfcand_drsubjet2_values = features.get("pfcand_drsubjet2");
+        for (const auto& val : pfcand_drsubjet2_values) {
+          v.h_pfcand_drsubjet2->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::vertexEnergyRatio, false)) {
-          v.h_vertexEnergyRatio->Fill(tagVar);
+        
+        const auto& pfcand_normchi2_values = features.get("pfcand_normchi2");
+        for (const auto& val : pfcand_normchi2_values) {
+          v.h_pfcand_normchi2->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::vertexJetDeltaR, false)) {
-          v.h_vertexJetDeltaR->Fill(tagVar);
+        
+        const auto& pfcand_dz_values = features.get("pfcand_dz");
+        for (const auto& val : pfcand_dz_values) {
+          v.h_pfcand_dz->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::flightDistance2dVal, false)) {
-          v.h_flightDistance2dVal->Fill(tagVar);
+        
+        const auto& pfcand_dzsig_values = features.get("pfcand_dzsig");
+        for (const auto& val : pfcand_dzsig_values) {
+          v.h_pfcand_dzsig->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::flightDistance2dSig, false)) {
-          v.h_flightDistance2dSig->Fill(tagVar);
+        
+        const auto& pfcand_dxy_values = features.get("pfcand_dxy");
+        for (const auto& val : pfcand_dxy_values) {
+          v.h_pfcand_dxy->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::flightDistance3dVal, false)) {
-          v.h_flightDistance3dVal->Fill(tagVar);
+        
+        const auto& pfcand_dxysig_values = features.get("pfcand_dxysig");
+        for (const auto& val : pfcand_dxysig_values) {
+          v.h_pfcand_dxysig->Fill(val);
         }
-
-        for (const auto& tagVar : tagVars.getList(reco::btau::flightDistance3dSig, false)) {
-          v.h_flightDistance3dSig->Fill(tagVar);
+        
+        const auto& pfcand_dptdpt_values = features.get("pfcand_dptdpt");
+        for (const auto& val : pfcand_dptdpt_values) {
+          v.h_pfcand_dptdpt->Fill(val);
         }
-
-        // // track N total/pixel hits
-        // for (const auto & tagVar : tagVars.getList(reco::btau::trackNPixelHits, false)) {
-        //   v.n_pixel_hits->Fill(tagVar);}
-        // for (const auto & tagVar : tagVars.getList(reco::btau::trackNTotalHits, false)) {
-        //   v.n_total_hits->Fill(tagVar);}
+        
+        const auto& pfcand_detadeta_values = features.get("pfcand_detadeta");
+        for (const auto& val : pfcand_detadeta_values) {
+          v.h_pfcand_detadeta->Fill(val);
+        }
+        
+        const auto& pfcand_dphidphi_values = features.get("pfcand_dphidphi");
+        for (const auto& val : pfcand_dphidphi_values) {
+          v.h_pfcand_dphidphi->Fill(val);
+        }
+        
+        const auto& pfcand_dxydxy_values = features.get("pfcand_dxydxy");
+        for (const auto& val : pfcand_dxydxy_values) {
+          v.h_pfcand_dxydxy->Fill(val);
+        }
+        
+        const auto& pfcand_dzdz_values = features.get("pfcand_dzdz");
+        for (const auto& val : pfcand_dzdz_values) {
+          v.h_pfcand_dzdz->Fill(val);
+        }
+        
+        const auto& pfcand_dxydz_values = features.get("pfcand_dxydz");
+        for (const auto& val : pfcand_dxydz_values) {
+          v.h_pfcand_dxydz->Fill(val);
+        }
+        
+        const auto& pfcand_dphidxy_values = features.get("pfcand_dphidxy");
+        for (const auto& val : pfcand_dphidxy_values) {
+          v.h_pfcand_dphidxy->Fill(val);
+        }
+        
+        const auto& pfcand_dlambdadz_values = features.get("pfcand_dlambdadz");
+        for (const auto& val : pfcand_dlambdadz_values) {
+          v.h_pfcand_dlambdadz->Fill(val);
+        }
+        
+        const auto& pfcand_btagEtaRel_values = features.get("pfcand_btagEtaRel");
+        for (const auto& val : pfcand_btagEtaRel_values) {
+          v.h_pfcand_btagEtaRel->Fill(val);
+        }
+        
+        const auto& pfcand_btagPtRatio_values = features.get("pfcand_btagPtRatio");
+        for (const auto& val : pfcand_btagPtRatio_values) {
+          v.h_pfcand_btagPtRatio->Fill(val);
+        }
+        
+        const auto& pfcand_btagPParRatio_values = features.get("pfcand_btagPParRatio");
+        for (const auto& val : pfcand_btagPParRatio_values) {
+          v.h_pfcand_btagPParRatio->Fill(val);
+        }
+        
+        const auto& pfcand_btagSip2dVal_values = features.get("pfcand_btagSip2dVal");
+        for (const auto& val : pfcand_btagSip2dVal_values) {
+          v.h_pfcand_btagSip2dVal->Fill(val);
+        }
+        
+        const auto& pfcand_btagSip2dSig_values = features.get("pfcand_btagSip2dSig");
+        for (const auto& val : pfcand_btagSip2dSig_values) {
+          v.h_pfcand_btagSip2dSig->Fill(val);
+        }
+        
+        const auto& pfcand_btagSip3dVal_values = features.get("pfcand_btagSip3dVal");
+        for (const auto& val : pfcand_btagSip3dVal_values) {
+          v.h_pfcand_btagSip3dVal->Fill(val);
+        }
+        
+        const auto& pfcand_btagSip3dSig_values = features.get("pfcand_btagSip3dSig");
+        for (const auto& val : pfcand_btagSip3dSig_values) {
+          v.h_pfcand_btagSip3dSig->Fill(val);
+        }
+        
+        const auto& pfcand_btagJetDistVal_values = features.get("pfcand_btagJetDistVal");
+        for (const auto& val : pfcand_btagJetDistVal_values) {
+          v.h_pfcand_btagJetDistVal->Fill(val);
+        }
+        
+        const auto& pfcand_mask_values = features.get("pfcand_mask");
+        for (const auto& val : pfcand_mask_values) {
+          v.h_pfcand_mask->Fill(val);
+        }
+        
+        const auto& pfcand_pt_log_nopuppi_values = features.get("pfcand_pt_log_nopuppi");
+        for (const auto& val : pfcand_pt_log_nopuppi_values) {
+          v.h_pfcand_pt_log_nopuppi->Fill(val);
+        }
+        
+        const auto& pfcand_e_log_nopuppi_values = features.get("pfcand_e_log_nopuppi");
+        for (const auto& val : pfcand_e_log_nopuppi_values) {
+          v.h_pfcand_e_log_nopuppi->Fill(val);
+        }
+        
+        const auto& pfcand_ptrel_values = features.get("pfcand_ptrel");
+        for (const auto& val : pfcand_ptrel_values) {
+          v.h_pfcand_ptrel->Fill(val);
+        }
+        
+        const auto& pfcand_erel_values = features.get("pfcand_erel");
+        for (const auto& val : pfcand_erel_values) {
+          v.h_pfcand_erel->Fill(val);
+        }
+        
+        // HLT particle features
+        const auto& jet_pfcand_pt_log_values = features.get("jet_pfcand_pt_log");
+        for (const auto& val : jet_pfcand_pt_log_values) {
+          v.h_jet_pfcand_pt_log->Fill(val);
+        }
+        
+        const auto& jet_pfcand_energy_log_values = features.get("jet_pfcand_energy_log");
+        for (const auto& val : jet_pfcand_energy_log_values) {
+          v.h_jet_pfcand_energy_log->Fill(val);
+        }
+        
+        const auto& jet_pfcand_deta_values = features.get("jet_pfcand_deta");
+        for (const auto& val : jet_pfcand_deta_values) {
+          v.h_jet_pfcand_deta->Fill(val);
+        }
+        
+        const auto& jet_pfcand_dphi_values = features.get("jet_pfcand_dphi");
+        for (const auto& val : jet_pfcand_dphi_values) {
+          v.h_jet_pfcand_dphi->Fill(val);
+        }
+        
+        const auto& jet_pfcand_eta_values = features.get("jet_pfcand_eta");
+        for (const auto& val : jet_pfcand_eta_values) {
+          v.h_jet_pfcand_eta->Fill(val);
+        }
+        
+        const auto& jet_pfcand_charge_values = features.get("jet_pfcand_charge");
+        for (const auto& val : jet_pfcand_charge_values) {
+          v.h_jet_pfcand_charge->Fill(val);
+        }
+        
+        const auto& jet_pfcand_frompv_values = features.get("jet_pfcand_frompv");
+        for (const auto& val : jet_pfcand_frompv_values) {
+          v.h_jet_pfcand_frompv->Fill(val);
+        }
+        
+        const auto& jet_pfcand_nlostinnerhits_values = features.get("jet_pfcand_nlostinnerhits");
+        for (const auto& val : jet_pfcand_nlostinnerhits_values) {
+          v.h_jet_pfcand_nlostinnerhits->Fill(val);
+        }
+        
+        const auto& jet_pfcand_track_chi2_values = features.get("jet_pfcand_track_chi2");
+        for (const auto& val : jet_pfcand_track_chi2_values) {
+          v.h_jet_pfcand_track_chi2->Fill(val);
+        }
+        
+        const auto& jet_pfcand_track_qual_values = features.get("jet_pfcand_track_qual");
+        for (const auto& val : jet_pfcand_track_qual_values) {
+          v.h_jet_pfcand_track_qual->Fill(val);
+        }
+        
+        const auto& jet_pfcand_dz_values = features.get("jet_pfcand_dz");
+        for (const auto& val : jet_pfcand_dz_values) {
+          v.h_jet_pfcand_dz->Fill(val);
+        }
+        
+        const auto& jet_pfcand_dzsig_values = features.get("jet_pfcand_dzsig");
+        for (const auto& val : jet_pfcand_dzsig_values) {
+          v.h_jet_pfcand_dzsig->Fill(val);
+        }
+        
+        const auto& jet_pfcand_dxy_values = features.get("jet_pfcand_dxy");
+        for (const auto& val : jet_pfcand_dxy_values) {
+          v.h_jet_pfcand_dxy->Fill(val);
+        }
+        
+        const auto& jet_pfcand_dxysig_values = features.get("jet_pfcand_dxysig");
+        for (const auto& val : jet_pfcand_dxysig_values) {
+          v.h_jet_pfcand_dxysig->Fill(val);
+        }
+        
+        const auto& jet_pfcand_etarel_values = features.get("jet_pfcand_etarel");
+        for (const auto& val : jet_pfcand_etarel_values) {
+          v.h_jet_pfcand_etarel->Fill(val);
+        }
+        
+        const auto& jet_pfcand_pperp_ratio_values = features.get("jet_pfcand_pperp_ratio");
+        for (const auto& val : jet_pfcand_pperp_ratio_values) {
+          v.h_jet_pfcand_pperp_ratio->Fill(val);
+        }
+        
+        const auto& jet_pfcand_ppara_ratio_values = features.get("jet_pfcand_ppara_ratio");
+        for (const auto& val : jet_pfcand_ppara_ratio_values) {
+          v.h_jet_pfcand_ppara_ratio->Fill(val);
+        }
+        
+        const auto& jet_pfcand_trackjet_d3d_values = features.get("jet_pfcand_trackjet_d3d");
+        for (const auto& val : jet_pfcand_trackjet_d3d_values) {
+          v.h_jet_pfcand_trackjet_d3d->Fill(val);
+        }
+        
+        const auto& jet_pfcand_trackjet_d3dsig_values = features.get("jet_pfcand_trackjet_d3dsig");
+        for (const auto& val : jet_pfcand_trackjet_d3dsig_values) {
+          v.h_jet_pfcand_trackjet_d3dsig->Fill(val);
+        }
+        
+        const auto& jet_pfcand_trackjet_dist_values = features.get("jet_pfcand_trackjet_dist");
+        for (const auto& val : jet_pfcand_trackjet_dist_values) {
+          v.h_jet_pfcand_trackjet_dist->Fill(val);
+        }
+        
+        const auto& jet_pfcand_nhits_values = features.get("jet_pfcand_nhits");
+        for (const auto& val : jet_pfcand_nhits_values) {
+          v.h_jet_pfcand_nhits->Fill(val);
+        }
+        
+        const auto& jet_pfcand_npixhits_values = features.get("jet_pfcand_npixhits");
+        for (const auto& val : jet_pfcand_npixhits_values) {
+          v.h_jet_pfcand_npixhits->Fill(val);
+        }
+        
+        const auto& jet_pfcand_nstriphits_values = features.get("jet_pfcand_nstriphits");
+        for (const auto& val : jet_pfcand_nstriphits_values) {
+          v.h_jet_pfcand_nstriphits->Fill(val);
+        }
+        
+        const auto& jet_pfcand_trackjet_decayL_values = features.get("jet_pfcand_trackjet_decayL");
+        for (const auto& val : jet_pfcand_trackjet_decayL_values) {
+          v.h_jet_pfcand_trackjet_decayL->Fill(val);
+        }
+        
+        const auto& jet_pfcand_puppiw_values = features.get("jet_pfcand_puppiw");
+        for (const auto& val : jet_pfcand_puppiw_values) {
+          v.h_jet_pfcand_puppiw->Fill(val);
+        }
       }
     }
 
@@ -917,110 +1188,296 @@ void BTVHLTOfflineSource::bookHistograms(DQMStore::IBooker& iBooker, edm::Run co
     title = "3D IP significance of tracks (cm)" + trigPath;
     v.h_3d_ip_sig = iBooker.book1D(histoname.c_str(), title.c_str(), 40, -40, 40);
 
-    //new
-    histoname = "jetNSecondaryVertices";
-    title = "jet N Secondary Vertices" + trigPath;
-    v.h_jetNSecondaryVertices = iBooker.book1D(histoname.c_str(), title.c_str(), 10, -0.5, 9.5);
+    //DeepBoostedJetTagInfo
+    histoname = "pfcand_puppiw";
+    title = "PF candidate puppi weight" + trigPath;
+    v.h_pfcand_puppiw = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
 
-    histoname = "jet_pt";
-    title = "jet pt" + trigPath;
-    v.h_jet_pt = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 100);
+    histoname = "pfcand_hcalFrac";
+    title = "PF candidate HCAL fraction" + trigPath;
+    v.h_pfcand_hcalFrac = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
 
-    histoname = "jet_eta";
-    title = "jet eta" + trigPath;
-    v.h_jet_eta = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -2.5, 2.5);
+    histoname = "pfcand_VTX_ass";
+    title = "PF candidate vertex association" + trigPath;
+    v.h_pfcand_VTX_ass = iBooker.book1D(histoname.c_str(), title.c_str(), 10, -0.5, 9.5);
 
-    histoname = "trackSumJetEtRatio";
-    title = "trackSumJetEtRatio" + trigPath;
-    v.h_trackSumJetEtRatio = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 1.5);
+    histoname = "pfcand_lostInnerHits";
+    title = "PF candidate lost inner hits" + trigPath;
+    v.h_pfcand_lostInnerHits = iBooker.book1D(histoname.c_str(), title.c_str(), 10, -0.5, 9.5);
 
-    histoname = "trackSip2dValAboveCharm";
-    title = "trackSip2dSigAboveCharm" + trigPath;
-    v.h_trackSip2dSigAboveCharm = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.2, 0.2);
+    histoname = "pfcand_quality";
+    title = "PF candidate quality" + trigPath;
+    v.h_pfcand_quality = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
 
-    histoname = "trackSip2dSigAboveCharm";
-    title = "trackSip2dSigAboveCharm" + trigPath;
-    v.h_trackSip2dValAboveCharm = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -50, 50);
+    histoname = "pfcand_charge";
+    title = "PF candidate charge" + trigPath;
+    v.h_pfcand_charge = iBooker.book1D(histoname.c_str(), title.c_str(), 5, -2.5, 2.5);
 
-    histoname = "trackSip3dValAboveCharm";
-    title = "trackSip3dValAboveCharm" + trigPath;
-    v.h_trackSip3dValAboveCharm = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.2, 0.2);
+    histoname = "pfcand_isEl";
+    title = "PF candidate is electron" + trigPath;
+    v.h_pfcand_isEl = iBooker.book1D(histoname.c_str(), title.c_str(), 2, -0.5, 1.5);
 
-    histoname = "trackSip3dSigAboveCharm";
-    title = "trackSip3dSigAboveCharm" + trigPath;
-    v.h_trackSip3dSigAboveCharm = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -50, 50);
+    histoname = "pfcand_isMu";
+    title = "PF candidate is muon" + trigPath;
+    v.h_pfcand_isMu = iBooker.book1D(histoname.c_str(), title.c_str(), 2, -0.5, 1.5);
 
-    histoname = "jetNSelectedTracks";
-    title = "jet N Selected Tracks" + trigPath;
-    v.h_jetNSelectedTracks = iBooker.book1D(histoname.c_str(), title.c_str(), 42, -1.5, 40.5);
+    histoname = "pfcand_isChargedHad";
+    title = "PF candidate is charged hadron" + trigPath;
+    v.h_pfcand_isChargedHad = iBooker.book1D(histoname.c_str(), title.c_str(), 2, -0.5, 1.5);
 
-    histoname = "jetNTracksEtaRel";
-    title = "jetNTracksEtaRel" + trigPath;
-    v.h_jetNTracksEtaRel = iBooker.book1D(histoname.c_str(), title.c_str(), 42, -1.5, 40.5);
+    histoname = "pfcand_isGamma";
+    title = "PF candidate is gamma" + trigPath;
+    v.h_pfcand_isGamma = iBooker.book1D(histoname.c_str(), title.c_str(), 2, -0.5, 1.5);
 
-    histoname = "vertexCategory";
-    title = "vertex category" + trigPath;
-    v.h_vertexCategory = iBooker.book1D(histoname.c_str(), title.c_str(), 4, -1.5, 2.5);
+    histoname = "pfcand_isNeutralHad";
+    title = "PF candidate is neutral hadron" + trigPath;
+    v.h_pfcand_isNeutralHad = iBooker.book1D(histoname.c_str(), title.c_str(), 2, -0.5, 1.5);
 
-    histoname = "trackSumJetDeltaR";
-    title = "trackSumJetDeltaR" + trigPath;
-    v.h_trackSumJetDeltaR = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 0.35);
+    histoname = "pfcand_phirel";
+    title = "PF candidate relative phi" + trigPath;
+    v.h_pfcand_phirel = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -3.2, 3.2);
 
-    //new 2 below
-    histoname = "trackJetDistVal";
-    title = "trackJetDistVal" + trigPath;
-    v.h_trackJetDistVal = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -1, 0.01);
+    histoname = "pfcand_etarel";
+    title = "PF candidate relative eta" + trigPath;
+    v.h_pfcand_etarel = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 5);
 
-    histoname = "trackPtRel";
-    title = "track pt rel" + trigPath;
-    v.h_trackPtRel = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 7);
+    histoname = "pfcand_deltaR";
+    title = "PF candidate delta R" + trigPath;
+    v.h_pfcand_deltaR = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 0.5);
 
-    histoname = "trackDeltaR";
-    title = "trackDeltaR" + trigPath;
-    v.h_trackDeltaR = iBooker.book1D(histoname.c_str(), title.c_str(), 160, -0.05, .47);
+    histoname = "pfcand_abseta";
+    title = "PF candidate absolute eta" + trigPath;
+    v.h_pfcand_abseta = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 3);
 
-    histoname = "trackPtRatio";
-    title = "trackPtRatio" + trigPath;
-    v.h_trackPtRatio = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.01, 0.3);
+    histoname = "pfcand_ptrel_log";
+    title = "PF candidate log(ptrel)" + trigPath;
+    v.h_pfcand_ptrel_log = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -10, 5);
 
-    histoname = "trackSip2dSig";
-    title = "trackSip2dSig" + trigPath;
-    v.h_trackSip2dSig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -55, 55);
+    histoname = "pfcand_erel_log";
+    title = "PF candidate log(erel)" + trigPath;
+    v.h_pfcand_erel_log = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -10, 5);
 
-    histoname = "trackDecayLenVal";
-    title = "trackDecayLenVal" + trigPath;
-    v.h_trackDecayLenVal = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 22);
+    histoname = "pfcand_pt_log";
+    title = "PF candidate log(pt)" + trigPath;
+    v.h_pfcand_pt_log = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 10);
 
-    histoname = "trackEtaRel";
-    title = "trackEtaRel" + trigPath;
-    v.h_trackEtaRel = iBooker.book1D(histoname.c_str(), title.c_str(), 31, 0, 30);
+    histoname = "pfcand_drminsv";
+    title = "PF candidate min deltaR to SV" + trigPath;
+    v.h_pfcand_drminsv = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 0.5);
 
-    //new 3 below
-    histoname = "vertexEnergyRatio";
-    title = "vertexEnergyRatio" + trigPath;
-    v.h_vertexEnergyRatio = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 3);
+    histoname = "pfcand_drsubjet1";
+    title = "PF candidate deltaR to subjet1" + trigPath;
+    v.h_pfcand_drsubjet1 = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 0.5);
 
-    histoname = "vertexJetDeltaR";
-    title = "vertexJetDeltaR" + trigPath;
-    v.h_vertexJetDeltaR = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.01, 0.4);
+    histoname = "pfcand_drsubjet2";
+    title = "PF candidate deltaR to subjet2" + trigPath;
+    v.h_pfcand_drsubjet2 = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 0.5);
 
-    histoname = "flightDistance2dVal";
-    title = "flightDistance2dVal" + trigPath;
-    v.h_flightDistance2dVal = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 5);
+    histoname = "pfcand_normchi2";
+    title = "PF candidate normalized chi2" + trigPath;
+    v.h_pfcand_normchi2 = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
 
-    histoname = "flightDistance2dSig";
-    title = "flightDistance2dSig" + trigPath;
-    v.h_flightDistance2dSig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -10, 150);
+    histoname = "pfcand_dz";
+    title = "PF candidate dz" + trigPath;
+    v.h_pfcand_dz = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -20, 20);
 
-    histoname = "flightDistance3dVal";
-    title = "flightDistance3dVal" + trigPath;
-    v.h_flightDistance3dVal = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 5);
+    histoname = "pfcand_dzsig";
+    title = "PF candidate dz significance" + trigPath;
+    v.h_pfcand_dzsig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -100, 100);
 
-    histoname = "flightDistance3dSig";
-    title = "flightDistance3dSig" + trigPath;
-    v.h_flightDistance3dSig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -10, 150);
+    histoname = "pfcand_dxy";
+    title = "PF candidate dxy" + trigPath;
+    v.h_pfcand_dxy = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -2, 2);
 
-    //end new
+    histoname = "pfcand_dxysig";
+    title = "PF candidate dxy significance" + trigPath;
+    v.h_pfcand_dxysig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -100, 100);
+
+    histoname = "pfcand_dptdpt";
+    title = "PF candidate dptdpt" + trigPath;
+    v.h_pfcand_dptdpt = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
+
+    histoname = "pfcand_detadeta";
+    title = "PF candidate detadeta" + trigPath;
+    v.h_pfcand_detadeta = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 0.1);
+
+    histoname = "pfcand_dphidphi";
+    title = "PF candidate dphidphi" + trigPath;
+    v.h_pfcand_dphidphi = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 0.1);
+
+    histoname = "pfcand_dxydxy";
+    title = "PF candidate dxydxy" + trigPath;
+    v.h_pfcand_dxydxy = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 0.1);
+
+    histoname = "pfcand_dzdz";
+    title = "PF candidate dzdz" + trigPath;
+    v.h_pfcand_dzdz = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
+
+    histoname = "pfcand_dxydz";
+    title = "PF candidate dxydz" + trigPath;
+    v.h_pfcand_dxydz = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -1, 1);
+
+    histoname = "pfcand_dphidxy";
+    title = "PF candidate dphidxy" + trigPath;
+    v.h_pfcand_dphidxy = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 0.1);
+
+    histoname = "pfcand_dlambdadz";
+    title = "PF candidate dlambdadz" + trigPath;
+    v.h_pfcand_dlambdadz = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 0.1);
+
+    histoname = "pfcand_btagEtaRel";
+    title = "PF candidate btag EtaRel" + trigPath;
+    v.h_pfcand_btagEtaRel = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
+
+    histoname = "pfcand_btagPtRatio";
+    title = "PF candidate btag PtRatio" + trigPath;
+    v.h_pfcand_btagPtRatio = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
+
+    histoname = "pfcand_btagPParRatio";
+    title = "PF candidate btag PParRatio" + trigPath;
+    v.h_pfcand_btagPParRatio = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
+
+    histoname = "pfcand_btagSip2dVal";
+    title = "PF candidate btag Sip2dVal" + trigPath;
+    v.h_pfcand_btagSip2dVal = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -20, 20);
+
+    histoname = "pfcand_btagSip2dSig";
+    title = "PF candidate btag Sip2dSig" + trigPath;
+    v.h_pfcand_btagSip2dSig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -100, 100);
+
+    histoname = "pfcand_btagSip3dVal";
+    title = "PF candidate btag Sip3dVal" + trigPath;
+    v.h_pfcand_btagSip3dVal = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -20, 20);
+
+    histoname = "pfcand_btagSip3dSig";
+    title = "PF candidate btag Sip3dSig" + trigPath;
+    v.h_pfcand_btagSip3dSig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -100, 100);
+
+    histoname = "pfcand_btagJetDistVal";
+    title = "PF candidate btag JetDistVal" + trigPath;
+    v.h_pfcand_btagJetDistVal = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.1, 0.01);
+
+    histoname = "pfcand_mask";
+    title = "PF candidate mask" + trigPath;
+    v.h_pfcand_mask = iBooker.book1D(histoname.c_str(), title.c_str(), 2, -0.5, 1.5);
+
+    histoname = "pfcand_pt_log_nopuppi";
+    title = "PF candidate log(pt) no puppi" + trigPath;
+    v.h_pfcand_pt_log_nopuppi = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 10);
+
+    histoname = "pfcand_e_log_nopuppi";
+    title = "PF candidate log(e) no puppi" + trigPath;
+    v.h_pfcand_e_log_nopuppi = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 10);
+
+    histoname = "pfcand_ptrel";
+    title = "PF candidate ptrel" + trigPath;
+    v.h_pfcand_ptrel = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
+
+    histoname = "pfcand_erel";
+    title = "PF candidate erel" + trigPath;
+    v.h_pfcand_erel = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
+
+    histoname = "jet_pfcand_pt_log";
+    title = "Jet PF candidate log(pt)" + trigPath;
+    v.h_jet_pfcand_pt_log = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 10);
+
+    histoname = "jet_pfcand_energy_log";
+    title = "Jet PF candidate log(energy)" + trigPath;
+    v.h_jet_pfcand_energy_log = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 10);
+
+    histoname = "jet_pfcand_deta";
+    title = "Jet PF candidate deta" + trigPath;
+    v.h_jet_pfcand_deta = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 5);
+
+    histoname = "jet_pfcand_dphi";
+    title = "Jet PF candidate dphi" + trigPath;
+    v.h_jet_pfcand_dphi = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -3.2, 3.2);
+
+    histoname = "jet_pfcand_eta";
+    title = "Jet PF candidate eta" + trigPath;
+    v.h_jet_pfcand_eta = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -3, 3);
+
+    histoname = "jet_pfcand_charge";
+    title = "Jet PF candidate charge" + trigPath;
+    v.h_jet_pfcand_charge = iBooker.book1D(histoname.c_str(), title.c_str(), 5, -2.5, 2.5);
+
+    histoname = "jet_pfcand_frompv";
+    title = "Jet PF candidate from PV" + trigPath;
+    v.h_jet_pfcand_frompv = iBooker.book1D(histoname.c_str(), title.c_str(), 10, -0.5, 9.5);
+
+    histoname = "jet_pfcand_nlostinnerhits";
+    title = "Jet PF candidate n lost inner hits" + trigPath;
+    v.h_jet_pfcand_nlostinnerhits = iBooker.book1D(histoname.c_str(), title.c_str(), 10, -0.5, 9.5);
+
+    histoname = "jet_pfcand_track_chi2";
+    title = "Jet PF candidate track chi2" + trigPath;
+    v.h_jet_pfcand_track_chi2 = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 20);
+
+    histoname = "jet_pfcand_track_qual";
+    title = "Jet PF candidate track quality" + trigPath;
+    v.h_jet_pfcand_track_qual = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
+
+    histoname = "jet_pfcand_dz";
+    title = "Jet PF candidate dz" + trigPath;
+    v.h_jet_pfcand_dz = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -20, 20);
+
+    histoname = "jet_pfcand_dzsig";
+    title = "Jet PF candidate dz significance" + trigPath;
+    v.h_jet_pfcand_dzsig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -100, 100);
+
+    histoname = "jet_pfcand_dxy";
+    title = "Jet PF candidate dxy" + trigPath;
+    v.h_jet_pfcand_dxy = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -2, 2);
+
+    histoname = "jet_pfcand_dxysig";
+    title = "Jet PF candidate dxy significance" + trigPath;
+    v.h_jet_pfcand_dxysig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -100, 100);
+
+    histoname = "jet_pfcand_etarel";
+    title = "Jet PF candidate etarel" + trigPath;
+    v.h_jet_pfcand_etarel = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -5, 5);
+
+    histoname = "jet_pfcand_pperp_ratio";
+    title = "Jet PF candidate pperp ratio" + trigPath;
+    v.h_jet_pfcand_pperp_ratio = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
+
+    histoname = "jet_pfcand_ppara_ratio";
+    title = "Jet PF candidate ppara ratio" + trigPath;
+    v.h_jet_pfcand_ppara_ratio = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
+
+    histoname = "jet_pfcand_trackjet_d3d";
+    title = "Jet PF candidate trackjet d3d" + trigPath;
+    v.h_jet_pfcand_trackjet_d3d = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -10, 10);
+
+    histoname = "jet_pfcand_trackjet_d3dsig";
+    title = "Jet PF candidate trackjet d3dsig" + trigPath;
+    v.h_jet_pfcand_trackjet_d3dsig = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -100, 100);
+
+    histoname = "jet_pfcand_trackjet_dist";
+    title = "Jet PF candidate trackjet dist" + trigPath;
+    v.h_jet_pfcand_trackjet_dist = iBooker.book1D(histoname.c_str(), title.c_str(), 100, -0.5, 0.5);
+
+    histoname = "jet_pfcand_nhits";
+    title = "Jet PF candidate nhits" + trigPath;
+    v.h_jet_pfcand_nhits = iBooker.book1D(histoname.c_str(), title.c_str(), 40, -0.5, 39.5);
+
+    histoname = "jet_pfcand_npixhits";
+    title = "Jet PF candidate npixhits" + trigPath;
+    v.h_jet_pfcand_npixhits = iBooker.book1D(histoname.c_str(), title.c_str(), 15, -0.5, 14.5);
+
+    histoname = "jet_pfcand_nstriphits";
+    title = "Jet PF candidate nstriphits" + trigPath;
+    v.h_jet_pfcand_nstriphits = iBooker.book1D(histoname.c_str(), title.c_str(), 30, -0.5, 29.5);
+
+    histoname = "jet_pfcand_trackjet_decayL";
+    title = "Jet PF candidate trackjet decayL" + trigPath;
+    v.h_jet_pfcand_trackjet_decayL = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 10);
+
+    histoname = "jet_pfcand_puppiw";
+    title = "Jet PF candidate puppi weight" + trigPath;
+    v.h_jet_pfcand_puppiw = iBooker.book1D(histoname.c_str(), title.c_str(), 100, 0, 1);
+
+    //end DeepBoostedJetTagInfo
 
     histoname = "OnlineTrkEff_Pt";
     title = "Relative Online Trk Efficiency vs Pt " + trigPath;
